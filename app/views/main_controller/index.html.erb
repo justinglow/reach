@@ -1,5 +1,20 @@
+<h1>Networks</h1>
+<ul>
+<% @networks.each do |network| %>
+  <li><%= link_to network.name, network %></li>
+<% end %>
+</ul>
+
+<h1>Sites</h1>
+<ul>
+<% @sites.each do |site| %>
+  <li><%= link_to site.name, site %></li>
+<% end %>
+</ul>
+
+<h1>Users</h1>
 <ul>
 <% @users.each do |user| %>
-  <li><%= user.name %></li>
+  <li><%= link_to user.name, user %> (<%= user.twitter_follower_count %> followers)</li>
 <% end %>
 </ul>
