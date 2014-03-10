@@ -5,7 +5,7 @@
 <% end %>
 </ul>
 
-<h1><%= link_to 'Sites', sites %></h1>
+<h1><%= link_to 'Sites', sites_path %></h1>
 <ul>
 <% @sites.each do |site| %>
   <li><%= link_to site.name, site %> (Network: <%= site.network.name %>)</li>
