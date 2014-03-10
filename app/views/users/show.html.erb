@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+
+<p>
+  <strong>Twitter handle:</strong>
+  <%= @user.twitter_handle %>
+</p>
+
+<p>
+  <strong>Twitter follower count:</strong>
+  <%= @user.twitter_follower_count %>
+</p>
+
+<p>
+  <strong>Site:</strong>
+  <%= @user.site.name %> (<%= @user.site.network.name %> network)
+</p>
+
+<p>
+  <strong>Last updated:</strong>
+  <%= time_ago_in_words(@user.updated_at.to_s) %> ago
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

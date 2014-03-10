@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  twitter_handle: MyString
+  twitter_follower_count: 1
+  network_id: 1
+
+two:
+  name: MyString
+  twitter_handle: MyString
+  twitter_follower_count: 1
+  network_id: 1

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @site.name %>
+</p>
+
+<p>
+  <strong>Twitter handle:</strong>
+  <%= @site.twitter_handle %>
+</p>
+
+<p>
+  <strong>Twitter follower count:</strong>
+  <%= @site.twitter_follower_count %>
+</p>
+
+<p>
+  <strong>Network:</strong>
+  <%= @site.network.name %>
+</p>
+
+<%= link_to 'Edit', edit_site_path(@site) %> |
+<%= link_to 'Back', sites_path %>
