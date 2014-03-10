@@ -8,7 +8,7 @@
 <h1>Sites</h1>
 <ul>
 <% @sites.each do |site| %>
-  <li><%= link_to site.name, site %></li>
+  <li><%= link_to site.name, site %> (Network: <%= site.network.name %>)</li>
 <% end %>
 </ul>
 
