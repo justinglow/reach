@@ -1,1 +1,5 @@
-oh hey
+<ul>
+<% @users.each do |user| %>
+  <li><%= user.name %></li>
+<% end %>
+</ul>
