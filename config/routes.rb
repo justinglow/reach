@@ -1,12 +1,12 @@
 Reach::Application.routes.draw do
-  get "main_controller/index"
+  get "main/index"
   resources :users
 
   resources :sites
 
   resources :networks
   
-  root to: "main_controller#index"
+  root to: "main#index"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
