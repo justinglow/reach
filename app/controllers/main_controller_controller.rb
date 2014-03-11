@@ -1,7 +1,7 @@
 class MainControllerController < ApplicationController
   def index
-   @users = User.all
+   @users = User.order("twitter_follower_count DESC")
    @networks = Network.all
-   @sites = Site.all
+   @sites = Site.order("twitter_follower_count DESC")
   end
 end
